@@ -32,7 +32,7 @@ public class CountryService {
 		return countryRepository.findByName(countryName);
 	}
 	
-	public List<RestCountriesResponse> get10WithBiggestPopulation() {
+	public List<RestCountriesResponse> getTop10WithBiggestPopulation() {
 		List<RestCountriesResponse> restCountriesList = new RestCountries().getResponseEU();
 		return restCountriesList.stream()
 				.filter(restCountry -> restCountry.getPopulation() != null)
@@ -46,7 +46,7 @@ public class CountryService {
 				.collect(Collectors.toList());
 	}
 	
-	public List<RestCountriesResponse> get10WithBiggestArea() {
+	public List<RestCountriesResponse> getTop10WithBiggestArea() {
 		List<RestCountriesResponse> restCountriesList = new RestCountries().getResponseEU();
 		return restCountriesList.stream()
 				.filter(restCountry -> restCountry.getArea() != null)
@@ -60,7 +60,7 @@ public class CountryService {
 				.collect(Collectors.toList());
 	}
 	
-	public List<RestCountriesResponse> get10WithBiggestPopulationDensity() {
+	public List<RestCountriesResponse> getTop10WithBiggestPopulationDensity() {
 		List<RestCountriesResponse> restCountriesList = new RestCountries().getResponseEU();
 		return restCountriesList.stream()
 				.filter(restCountry -> restCountry.getPopulation() != null && restCountry.getArea() != null)

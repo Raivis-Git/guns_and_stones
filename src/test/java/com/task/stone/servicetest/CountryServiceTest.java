@@ -23,17 +23,17 @@ public class CountryServiceTest {
 	
 	@Test
 	public void getTop10WithBiggestPopulationTest() {
-		assertEquals(10, countryService.get10WithBiggestPopulation().size());
+		assertEquals(10, countryService.getTop10WithBiggestPopulation().size());
 	}
 	
 	@Test
 	public void getTop10WithBiggestAreaTest() {
-		assertEquals(10, countryService.get10WithBiggestArea().size());
+		assertEquals(10, countryService.getTop10WithBiggestArea().size());
 	}
 	
 	@Test
 	public void getTop10WithBiggestPopulationDensityTest() {
-		assertEquals(10, countryService.get10WithBiggestPopulationDensity().size());
+		assertEquals(10, countryService.getTop10WithBiggestPopulationDensity().size());
 	}
 	
 }

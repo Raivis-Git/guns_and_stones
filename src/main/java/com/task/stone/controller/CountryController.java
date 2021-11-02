@@ -33,21 +33,21 @@ public class CountryController {
 	}
 	
 	@GetMapping
-	@RequestMapping("/10WithBiggestPopulation")
-	public ResponseEntity<?> tenWithBiggestPopulation() {
-		return ResponseEntity.ok(countryService.get10WithBiggestPopulation());
+	@RequestMapping("/top10WithBiggestPopulation")
+	public ResponseEntity<?> top10withBiggestPopulation() {
+		return ResponseEntity.ok(countryService.getTop10WithBiggestPopulation());
 	}
 	
 	@GetMapping
-	@RequestMapping("/10WithBiggestArea")
-	public ResponseEntity<?> tenWithBiggestArea() {
-		return ResponseEntity.ok(countryService.get10WithBiggestArea());
+	@RequestMapping("/top10WithBiggestArea")
+	public ResponseEntity<?> top10withBiggestArea() {
+		return ResponseEntity.ok(countryService.getTop10WithBiggestArea());
 	}
 	
 	@GetMapping
-	@RequestMapping("/10WithBiggestPopulationDensity")
-	public ResponseEntity<?> tenWithBiggestPopulationDensity() {
-		return ResponseEntity.ok(countryService.get10WithBiggestPopulationDensity());
+	@RequestMapping("/top10WithBiggestPopulationDensity")
+	public ResponseEntity<?> top10withBiggestPopulationDensity() {
+		return ResponseEntity.ok(countryService.getTop10WithBiggestPopulationDensity());
 	}
 	
 }
